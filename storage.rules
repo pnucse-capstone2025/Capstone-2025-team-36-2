@@ -1,0 +1,20 @@
+rules_version = '2';
+
+service firebase.storage {
+  match /b/{bucket}/o {
+    // 사용자 인증된 경우 본인의 디렉토리에만 접근 허용
+    match /diaries/{userId}/{allPaths=**} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+    }
+    
+    // 동화 이미지도 동일한 권한 설정
+    match /fairytales/{userId}/{allPaths=**} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+    }
+    
+    // 임시로 모든 인증된 사용자에게 읽기/쓰기 허용 (디버깅용)
+    match /{allPaths=**} {
+      allow read, write: if request.auth != null;
+    }
+  }
+}

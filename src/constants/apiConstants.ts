@@ -1,0 +1,47 @@
+/**
+ * API 관련 상수 정의
+ */
+
+// Gemini AI 설정
+export const GEMINI_CONFIG = {
+  MAX_OUTPUT_TOKENS: 2048,
+  TEMPERATURE: 0.7,
+  TOP_P: 0.95,
+  TOP_K: 40,
+  MAX_STORY_LENGTH: 10000,
+  MAX_DIARY_CONTENT_LENGTH: 3000,
+  SENTENCE_LENGTH_THRESHOLD: 100,
+  PARAGRAPH_DIVISION_INTERVAL: 2,
+} as const;
+
+// API 호출 지연 시간 (밀리초)
+export const API_DELAYS = {
+  STORY_PROCESSING: 1000, // 1초
+  IMAGE_GENERATION: 2000, // 2초
+  PARAGRAPH_PROCESSING: 500, // 0.5초
+  IMAGE_SAVE_DELAY: 1000, // 1초
+} as const;
+
+// 이미지 생성 설정
+export const IMAGE_CONFIG = {
+  MAX_HEIGHT: 2000,
+  MAX_WIDTH: 2000,
+  QUALITY: 0.8,
+  DEFAULT_HEIGHT: 200,
+} as const;
+
+// UI 관련 상수
+export const UI_CONSTANTS = {
+  ANIMATION_DURATION: 300,
+  MIN_HEIGHT: 200,
+  BORDER_RADIUS: 8,
+} as const;
+
+// 텍스트 제한
+export const TEXT_LIMITS = {
+  MAX_STORY_LENGTH: 10000,
+  MAX_DIARY_CONTENT_LENGTH: 1000,
+  MAX_DESCRIPTION_PREVIEW: 100,
+  MAX_PROMPT_PREVIEW: 200,
+} as const;
+

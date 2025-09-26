@@ -1,0 +1,28 @@
+import React from 'react';
+import { SvgXml } from 'react-native-svg';
+
+interface ImgGenerateIconProps {
+  size?: number;
+  color?: string;
+}
+
+const ImgGenerateIcon: React.FC<ImgGenerateIconProps> = ({ size = 24, color = '#7D7D7D' }) => {
+  const svgXml = `
+    <svg width="${size}" height="${size}" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g clip-path="url(#clip0_17_1851)">
+        <path d="M9.99967 21.236L6.75467 14.745L0.263672 11.5L6.75467 8.255L9.99967 1.764L13.2447 8.255L19.7357 11.5L13.2447 14.745L9.99967 21.236ZM4.73567 11.5L8.24467 13.255L9.99967 16.764L11.7547 13.255L15.2637 11.5L11.7547 9.745L9.99967 6.236L8.24467 9.745L4.73567 11.5ZM17.9997 21L19.4997 24L20.9997 21L23.9997 19.5L20.9997 18L19.4997 15L17.9997 18L14.9997 19.5L17.9997 21ZM19.3327 4.667L20.4997 7L21.6667 4.667L23.9997 3.5L21.6667 2.333L20.4997 0L19.3327 2.333L16.9997 3.5L19.3327 4.667Z" fill="${color}"/>
+      </g>
+      <defs>
+        <clipPath id="clip0_17_1851">
+          <rect width="24" height="24" fill="white"/>
+        </clipPath>
+      </defs>
+    </svg>
+  `;
+
+  return <SvgXml xml={svgXml} width={size} height={size} />;
+};
+
+export default ImgGenerateIcon;
+
+
