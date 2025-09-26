@@ -103,10 +103,6 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# APK files
-*.apk
-*.aab
-
 # Firebase functions
 functions/node_modules/
 functions/lib/
