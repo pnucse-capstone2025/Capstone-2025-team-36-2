@@ -412,7 +412,7 @@ npm start
 
 ### 6.2. 시연 영상
 
-> [![2025 전기 졸업과제 36 스토리픽셀](https://www.youtube.com/watch?v=K8SzoP5nCNY)] 
+> [2025 전기 졸업과제 36 스토리픽셀]  https://www.youtube.com/watch?v=K8SzoP5nCNY
 
 
 ## 7. 팀 구성
