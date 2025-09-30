@@ -412,7 +412,7 @@ npm start
 
 ### 6.2. 시연 영상
 
-> [![영상 이름](유튜브 영상 썸네일 URL)](유튜브 영상 URL) 업로드 예정
+> [![2025 전기 졸업과제 36 스토리픽셀](https://www.youtube.com/watch?v=K8SzoP5nCNY)] 
 
 
 ## 7. 팀 구성
